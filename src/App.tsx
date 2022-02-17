@@ -1,4 +1,4 @@
-import "./globals.css";
+import "./styles/style.css";
 import styles from "./App.module.css";
 import List from "./Pages/List/list";
 

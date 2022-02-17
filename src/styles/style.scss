@@ -1,0 +1,27 @@
+@import "../Pages/List/list";
+
+$color-primary: #fff;
+$color-background: #000;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p,
+a {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

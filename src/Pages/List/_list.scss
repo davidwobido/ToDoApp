@@ -1,7 +1,5 @@
 .item {
   display: grid;
-  display: grid;
-  -ms-grid-columns: 4fr 0.5fr 0.5fr;
   grid-template-columns: 4fr 0.5fr 0.5fr;
   gap: 1rem;
   max-width: 50rem;
@@ -31,28 +29,4 @@
 
 .btn-delete {
   background-color: red;
-}
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 p,
-a {
-  margin: 0;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
