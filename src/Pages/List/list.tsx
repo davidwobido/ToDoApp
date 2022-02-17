@@ -1,27 +1,42 @@
 import { useState } from "react";
 
 export default function list() {
-  const [active, setActive] = useState(true);
+  const [list, setList] = useState([]);
 
-  function handleClick() {
-    setActive(!active);
-    console.log(active);
-  }
+  const Input = () => {
+    const [active, setActive] = useState(true);
 
-  return (
-    <>
-      <h1>To Do List</h1>
+    function handleClick() {
+      setActive(!active);
+      console.log(active);
+    }
+
+    return (
       <section className="item">
-        <li className="content">hi</li>
+        <input className="content" placeholder="Type Text" />
         <button
           onClick={handleClick}
           className={`btn ${active ? ["btn-active"] : ["btn-deactive"]}`}
         >
           done
         </button>
-        <button className="btn btn-delete">delete</button>
       </section>
-      <button className="btn-add">Add Item</button>
+    );
+  };
+
+  function addItem() {
+    const newArray = [...list, <Input key={list.length} />];
+    setList(newArray);
+    console.log(Input);
+  }
+
+  return (
+    <>
+      <h1>To Do List</h1>
+      <div>{list}</div>
+      <button className="btn-add" onClick={addItem}>
+        Add Item
+      </button>
     </>
   );
 }
