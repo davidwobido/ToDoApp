@@ -1,6 +1,5 @@
 .wrapper {
   display: grid;
-  display: grid;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -8,13 +7,11 @@
 }
 
 .title {
-  grid-column-align: start;
   justify-self: start;
   margin-bottom: 3rem;
 }
 
 .item {
-  display: grid;
   display: grid;
   -ms-grid-columns: 4fr 0.5fr 0.5fr;
   grid-template-columns: 4fr 0.5fr 0.5fr;
@@ -58,7 +55,6 @@
 }
 
 .btn-add {
-  grid-column-align: start;
   justify-self: start;
   background-color: #8970a5;
   padding: 0.5rem 4rem;
@@ -68,7 +64,6 @@
 *::after,
 *::before {
   margin: 0;
-  box-sizing: border-box;
   box-sizing: border-box;
 }
 
