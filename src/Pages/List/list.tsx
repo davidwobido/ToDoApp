@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 export default function list() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState<any>([]);
 
   const Input = () => {
-    const [active, setActive] = useState(true);
+    const [active, setActive] = useState(false);
 
     function handleClick() {
       setActive(!active);
