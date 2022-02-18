@@ -1,0 +1,59 @@
+@mixin checkImage() {
+  background-image: url("../../../lib/Checkmark_Symbol.svg");
+  background-position: center;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.title {
+  justify-self: start;
+  margin-bottom: 3rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 4fr 0.5fr 0.5fr;
+  gap: 1rem;
+  min-width: 30rem;
+  max-width: 50rem;
+  margin-bottom: 0.5rem;
+}
+
+.content {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: $color-background;
+  border: 0;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.btn-active {
+  @include checkImage();
+  background-color: $color-positive;
+}
+
+.btn-deactive {
+  @include checkImage();
+  opacity: 30%;
+  background-color: $color-positive;
+}
+
+.btn-add {
+  justify-self: start;
+  background-color: $color-accent;
+  padding: 0.5rem 4rem;
+}
