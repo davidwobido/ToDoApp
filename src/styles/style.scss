@@ -1,7 +1,5 @@
+@import "./variables";
 @import "../Pages/List/list";
-
-$color-primary: #fff;
-$color-background: #000;
 
 *,
 *::after,
@@ -18,6 +16,8 @@ h5,
 h6 p,
 a {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color-text;
 }
 
 body {

@@ -17,9 +17,7 @@ export default function list() {
         <button
           onClick={handleClick}
           className={`btn ${active ? ["btn-active"] : ["btn-deactive"]}`}
-        >
-          done
-        </button>
+        ></button>
       </section>
     );
   };
@@ -31,12 +29,13 @@ export default function list() {
   }
 
   return (
-    <>
-      <h1>To Do List</h1>
+    <div className="wrapper">
+      <h1 className="title">To Do List</h1>
+      <Input />
       <div>{list}</div>
-      <button className="btn-add" onClick={addItem}>
+      <button className="btn btn-add" onClick={addItem}>
         Add Item
       </button>
-    </>
+    </div>
   );
 }

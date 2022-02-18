@@ -1,36 +1,67 @@
+.wrapper {
+  display: grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.title {
+  grid-column-align: start;
+  justify-self: start;
+  margin-bottom: 3rem;
+}
+
 .item {
   display: grid;
   display: grid;
   -ms-grid-columns: 4fr 0.5fr 0.5fr;
   grid-template-columns: 4fr 0.5fr 0.5fr;
   gap: 1rem;
+  min-width: 30rem;
   max-width: 50rem;
+  margin-bottom: 0.5rem;
 }
 
 .content {
   list-style-type: none;
   overflow: hidden;
   padding: 1rem;
-  background-color: antiquewhite;
+  background-color: #f9edd2;
+  border: 0;
 }
 
 .btn {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 0.5rem;
+  border-radius: 0.25rem;
+  color: white;
 }
 
 .btn-active {
-  background: green;
+  background-image: url("../../../lib/Checkmark_Symbol.svg");
+  background-position: center;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  background-color: #4b9d44;
 }
 
 .btn-deactive {
-  background-color: #999;
+  background-image: url("../../../lib/Checkmark_Symbol.svg");
+  background-position: center;
+  background-size: 1rem;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  background-color: #4b9d44;
 }
 
-.btn-delete {
-  background-color: red;
+.btn-add {
+  grid-column-align: start;
+  justify-self: start;
+  background-color: #8970a5;
+  padding: 0.5rem 4rem;
 }
 
 *,
@@ -49,6 +80,8 @@ h5,
 h6 p,
 a {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #3d3d3d;
 }
 
 body {
